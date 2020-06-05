@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      host:
+      port:
+      database:
+      username:
+      password:
+  datasource:
+    url:
+    username:
+    password: 
+    driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    mapper-locations: classpath:mappers/*.xml
+    type-aliases-package: com.netease.jv.mysqltomongo.model
